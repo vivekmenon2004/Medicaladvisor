@@ -1,0 +1,149 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "responses": ["Hello! How can I assist you with your health today?", "Hi there! How can I help with your medical questions?"],
+            "context": [""]
+        },
+        {
+            "tag": "symptom_inquiry",
+            "patterns": ["I have a symptom", "Experiencing a health issue", "Symptom question", "Health concern"],
+            "responses": ["I'm here to help with your health concerns. Please describe your symptoms or health issue, and I'll provide relevant information and guidance."],
+            "context": [""]
+        },
+        {
+            "tag": "diagnosis_info",
+            "patterns": ["Possible diagnosis", "What could it be?", "Diagnose my symptoms"],
+            "responses": ["I can suggest possible diagnoses based on your symptoms, but keep in mind that I'm not a doctor. Please tell me about your symptoms, and I'll provide some potential causes."],
+            "context": ["symptom_inquiry"]
+        },
+        {
+            "tag": "treatment_options",
+            "patterns": ["Treatment options", "How to treat a condition", "Treatment advice"],
+            "responses": ["I can provide information on treatment options for specific health conditions. If you have a particular condition in mind, please let me know, and I'll offer guidance on treatment."],
+            "context": [""]
+        },
+        {
+            "tag": "prevention_tips",
+            "patterns": ["Preventive measures", "How to stay healthy", "Prevention advice"],
+            "responses": ["Preventing health issues is essential. If you'd like tips on staying healthy or preventing specific conditions, please let me know your interests, and I'll provide advice accordingly."],
+            "context": [""]
+        },
+        {
+            "tag": "medication_info",
+            "patterns": ["Medication information", "Tell me about a drug", "Medication details"],
+            "responses": ["I can provide information about medications and their uses. If you have a specific drug in mind, please share the name or describe it, and I'll provide details."],
+            "context": [""]
+        },
+        {
+            "tag": "department_recommendation",
+            "patterns": ["Which doctor should I consult?", "Doctor recommendation", "Consultation advice"],
+            "responses": ["Based on your symptoms, it's recommended that you consult a [Department/Type of Doctor], such as [Specialist Name]. They can provide you with further evaluation and guidance. Would you like more information about this department or doctor?"],
+            "context": ["symptom_inquiry"]
+        },
+        {
+            "tag": "cough_treatment",
+            "patterns": ["How to treat a cough", "Cough ", "Cough treatment options"],
+            "responses": ["Coughs can be caused by various factors. Some common treatments for coughs include staying hydrated, using cough drops, and avoiding irritants. If your cough persists or worsens, it's advisable to consult a healthcare professional for proper evaluation and treatment."],
+            "context": [""]
+        },
+        {
+            "tag": "cough_medications",
+            "patterns": ["Cough medicine", "3.medicine for cough", "Cough syrup"],
+            "responses": ["Over-the-counter cough medicines like [Medication Name] can help relieve cough symptoms. However, it's essential to read the label and follow dosing instructions carefully. If your cough is severe or persists, consult a doctor for guidance on medication."],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["You're welcome! If you have more health-related questions, feel free to ask.", "No problem! If you need further assistance with your health, don't hesitate to ask."],
+            "context": [""]
+        },
+        {
+            "tag": "affirmative",
+            "patterns": ["Yes", "Yeah", "Sure", "Absolutely", "Of course"],
+            "responses": ["Great! Please let me know how I can assist you with your health.", "Fantastic! How can I help further?"],
+            "context": [""]
+        },
+        {
+            "tag": "negative",
+            "patterns": ["No", "Not really", "I don't think so", "Sorry, I can't"],
+            "responses": ["I understand. If you ever have health-related questions in the future, feel free to reach out.", "No worries. Take care of your health, and don't hesitate to return if you need assistance."],
+            "context": [""]
+        },
+        {
+            "tag": "okay",
+            "patterns": ["Okay", "OK", "Alright", "Got it", "I understand"],
+            "responses": ["Got it! If you have more health-related inquiries, feel free to ask.", "Understood! Don't hesitate to seek health information whenever you need it."],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, I couldn't understand your health query. Please provide more details or ask your question differently.", "I'm not sure I understand your health concern. Can you please provide more information?"],
+            "context": [""]
+        },
+        {
+            "tag": "medication_side_effects",
+            "patterns": ["What are the side effects of [Medication Name]?", "Tell me about medication side effects"],
+            "responses": ["Medications can have various side effects. I can provide information about the potential side effects of specific drugs. Please specify the medication you're interested in."],
+            "context": [""]
+        },
+        {
+            "tag": "allergies",
+            "patterns": ["I think I'm allergic to something", "Allergy symptoms", "How to deal with allergies"],
+            "responses": ["Allergies can be bothersome. Please describe your symptoms or the suspected allergen, and I'll offer guidance on managing allergies."],
+            "context": [""]
+        },
+        {
+            "tag": "healthy_diet",
+            "patterns": ["What's a healthy diet?", "Diet tips for better health", "Balanced nutrition"],
+            "responses": ["Maintaining a healthy diet is essential for your well-being. I can provide tips on a balanced diet and nutrition. Do you have specific dietary questions or preferences?"],
+            "context": [""]
+        },
+        {
+            "tag": "exercise_recommendations",
+            "patterns": ["Exercise tips", "How often should I exercise?", "Best workouts for beginners"],
+            "responses": ["Regular exercise is beneficial for your health. I can offer exercise recommendations and tips based on your fitness level and goals. Please let me know what you're looking for."],
+            "context": [""]
+        },
+        {
+            "tag": "mental_health_support",
+            "patterns": ["I'm feeling stressed", "Mental health advice", "Coping with anxiety"],
+            "responses": ["Your mental well-being is important. If you're feeling stressed or anxious, I can provide relaxation techniques and self-care strategies. How can I assist you today?"],
+            "context": [""]
+        },
+        {
+            "tag": "emergency_situations",
+            "patterns": ["I have a medical emergency", "What to do in a medical crisis", "Emergency contact information"],
+            "responses": ["I'm not equipped to handle emergencies. If you have a medical emergency, please call your local emergency number or seek immediate medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "vaccination_info",
+            "patterns": ["Vaccine details", "COVID-19 vaccine information", "Vaccination schedule"],
+            "responses": ["Vaccination is crucial for public health. I can provide information about vaccines, including COVID-19 vaccines and their availability. Please specify your vaccination-related query."],
+            "context": [""]
+        },
+        {
+            "tag": "alternative_medicine",
+            "patterns": ["Alternative medicine options", "Herbal remedies", "Holistic health"],
+            "responses": ["Alternative medicine offers various approaches to health and wellness. If you're interested in alternative therapies or herbal remedies, feel free to ask for details."],
+            "context": [""]
+        },
+        {
+            "tag": "insurance_coverage",
+            "patterns": ["Does my insurance cover this?", "Health insurance information", "Coverage inquiry"],
+            "responses": ["Insurance coverage can vary. To determine if a particular medical service or treatment is covered by your insurance, please provide more details about your insurance plan."],
+            "context": [""]
+        },
+        {
+            "tag": "follow_up_care",
+            "patterns": ["What should I do after a doctor's visit?", "Post-appointment instructions", "Follow-up care advice"],
+            "responses": ["After a medical appointment, it's essential to follow any instructions provided by your healthcare provider. If you have specific questions about post-appointment care, feel free to ask."],
+            "context": [""]
+        }
+        
+    ]
+}
